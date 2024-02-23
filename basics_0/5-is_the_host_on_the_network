@@ -2,7 +2,7 @@
 ### Pinging given IP 5 times ###
 
 if [ "$1" == "" ]; then
-	echo ""
+	echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
 else
-	print()
+	ping -c 5 "$1"
 fi
